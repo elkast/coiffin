@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="L'Élégance Capillaire - La plateforme premium de coiffeurs d'exception à Abidjan. Découvrez des créations capillaires uniques, exposez vos œuvres ou trouvez votre prochain style signature.">
+    <meta name="keywords" content="salon coiffure, coiffeur abidjan, galerie coiffure, artistes capillaires, créations coiffure, réservation coiffeur, portfolio coiffeur">
+    <meta name="author" content="L'Élégance Capillaire">
+    <title>L'Élégance Capillaire - Galerie d'Art Capillaire et Salon Premium</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Styles et polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="importmap">
+      {
+        "imports": {
+          "gsap": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js",
+          "scrollTrigger": "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js",
+          "swiper": "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.esm.browser.min.js"
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- Overlay de texture -->
+    <div class="texture-overlay"></div>
+
+    <!-- Particules -->
+    <div id="particle-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo">L'Élégance Capillaire</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#services">Nos Services</a></li>
+                <li><a href="#galerie">Galerie d'Art</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#artistes">Nos Artistes</a></li>
+                <li><a href="#pourArtistes">Espace Artistes</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="tel:+2250594547632" class="phone-number"><i class="fas fa-phone"></i> 0574547632</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="light-effect"></div>
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">L'Art Capillaire Sublimé</h1>
+            <p class="animate__animated animate__fadeInUp">Là où les artistes capillaires exposent et où le style se découvre</p>
+            <div class="cta-buttons">
+                <button class="cta-button animate__animated animate__fadeInLeft">Réserver une expérience</button>
+                <button class="cta-button secondary animate__animated animate__fadeInRight">Explorer les œuvres</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Découvrir</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Section Introduction -->
+    <section class="intro">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h2>La Galerie des Créations Capillaires</h2>
+                <p>L'Élégance Capillaire est bien plus qu'un salon : c'est un espace d'expression artistique où les meilleurs coiffeurs abidjanais exposent leurs créations et où vous pouvez trouver l'inspiration pour votre prochain style signature.</p>
+                <div class="intro-stats">
+                    <div class="stat">
+                        <span class="count">78</span>
+                        <span class="label">Artistes<br>Capillaires</span>
+                    </div>
+                    <div class="stat">
+                        <span class="count">520+</span>
+                        <span class="label">Créations<br>Uniques</span>
+                    </div>
+                    <div class="stat">
+                        <span class="count">12K</span>
+                        <span class="label">Clients<br>Enchantés</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-image">
+                <div class="image-frame">
+                    <svg viewBox="0 0 200 200" class="blob-frame">
+                        <path d="M42.7,-51.1C52.9,-40.1,57.2,-24.2,59.5,-8.7C61.9,6.8,62.3,22,55.2,33.7C48.1,45.3,33.6,53.4,18.9,55.2C4.3,57.1,-10.5,52.7,-22.7,45.4C-35,38.1,-44.6,27.9,-51.2,14.7C-57.9,1.5,-61.5,-14.8,-55.4,-27C-49.4,-39.2,-33.7,-47.4,-18.5,-56.9C-3.3,-66.4,11.5,-77.2,24.8,-74.6C38,-72,52.8,-56,52.9,-39.9C53,-23.9,32.6,-7.8,42.7,7.3C52.9,22.3,93.7,36.3,109,54.2" transform="translate(100 100)" />
+                    </svg>
+                    <div class="blob-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <h2 class="section-title">Nos Prestations</h2>
+        <p class="section-subtitle">Découvrez nos services d'exception réalisés par des artistes capillaires renommés</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-cut service-icon"></i>
+                <h3>Création & Styling</h3>
+                <p>Coupes personnalisées adaptées à votre visage, style et personnalité par nos maîtres coiffeurs</p>
+                <span class="price">À partir de 15000 FCFA</span>
+                <a href="#" class="service-link">Explorer <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-palette service-icon"></i>
+                <h3>Art Chromatique</h3>
+                <p>Colorations signatures utilisant des techniques innovantes et des produits premium exclusifs</p>
+                <span class="price">À partir de 20000 FCFA</span>
+                <a href="#" class="service-link">Explorer <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-spa service-icon"></i>
+                <h3>Rituels & Métamorphoses</h3>
+                <p>Traitements capillaires luxueux et transformations complètes pour une renaissance capillaire</p>
+                <span class="price">À partir de 25000 FCFA</span>
+                <a href="#" class="service-link">Explorer <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-gem service-icon"></i>
+                <h3>Expériences Exclusives</h3>
+                <p>Services signature personnalisés, incluant consultation privée et suivi pour une transformation durable</p>
+                <span class="price">À partir de 50000 FCFA</span>
+                <a href="#" class="service-link">Explorer <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie d'Art -->
+    <section id="galerie" class="gallery">
+        <h2 class="section-title">Galerie d'Art Capillaire</h2>
+        <p class="section-subtitle">Explorez les œuvres signatures de nos artistes capillaires d'exception</p>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Toutes les œuvres</button>
+            <button class="filter-btn" data-filter="coupes">Coupes Créatives</button>
+            <button class="filter-btn" data-filter="couleurs">Art Chromatique</button>
+            <button class="filter-btn" data-filter="coiffages">Coiffages d'Exception</button>
+            <button class="filter-btn" data-filter="transformations">Métamorphoses</button>
+        </div>
+        
+        <div class="gallery-container">
+            <div class="swiper-container gallery-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Galerie dynamique générée par JS -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <div class="gallery-cta">
+            <a href="#" class="btn-gallery-view">Voir toute la collection</a>
+        </div>
+    </section>
+    
+    <!-- Section Processus Créatif -->
+    <section class="process">
+        <h2 class="section-title">Notre Processus Créatif</h2>
+        <p class="section-subtitle">Comment nous transformons votre vision en chef-d'œuvre capillaire</p>
+        
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <h3>Consultation Artistique</h3>
+                <p>Entretien approfondi pour comprendre votre vision, analyser votre style et la morphologie de votre visage</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <h3>Conception & Inspiration</h3>
+                <p>Élaboration d'un concept capillaire personnalisé adapté à votre personnalité et style de vie</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <h3>Réalisation Artistique</h3>
+                <p>Création de votre look signature par l'un de nos artistes capillaires experts avec des techniques exclusives</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <h3>Révélation & Éducation</h3>
+                <p>Conseils personnalisés pour maintenir et sublimer votre création capillaire au quotidien</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tarifs -->
+    <section id="tarifs" class="pricing">
+        <h2 class="section-title">Nos Tarifs</h2>
+        <p class="section-subtitle">Des prestations d'exception pour tous les besoins</p>
+        
+        <div class="pricing-tabs">
+            <button class="pricing-tab active" data-tab="femmes">Femmes</button>
+            <button class="pricing-tab" data-tab="hommes">Hommes</button>
+            <button class="pricing-tab" data-tab="soins">Soins & Rituels</button>
+            <button class="pricing-tab" data-tab="experiences">Expériences</button>
+        </div>
+        
+        <div class="pricing-content active" id="femmes-content">
+            <div class="pricing-grid">
+                <div class="pricing-item">
+                    <div class="pricing-name">Coupe Création par Styliste Junior</div>
+                    <div class="pricing-price">15000 FCFA</div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-name">Coupe Création par Styliste Senior</div>
+                    <div class="pricing-price">20000 FCFA</div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-name">Coupe Création par Artiste Directeur</div>
+                    <div class="pricing-price">30000 FCFA</div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-name">Brushing Artistique</div>
+                    <div class="pricing-price">10000-15000 FCFA</div>
+                </div>
+                <div class="pricing-item featured">
+                    <div class="pricing-name">Coloration Signature</div>
+                    <div class="pricing-price">À partir de 20000 FCFA</div>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-name">Balayage Artistique</div>
+                    <div class="pricing-price">À partir de 30000 FCFA</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Les autres contenus de tarifs seront affichés par JavaScript -->
+    </section>
+
+    <!-- Section Artistes -->
+    <section id="artistes" class="team">
+        <h2 class="section-title">Nos Artistes Capillaires</h2>
+        <p class="section-subtitle">Rencontrez les visionnaires qui transforment la coiffure en art</p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-image">
+                            <img src="img3.webp" alt="Styliste 1">
+                        </div>
+                        <h3 class="member-name">Grace ema </h3>
+                        <p class="member-role">Directrice Artistique et des tontines 🤣</p>
+                        <p class="member-bio">Avec 15 ans d'expérience dans la haute coiffure , Mabio apporte son expertise unique et sa vision créative à chaque création et aussi pour les tontines .</p>
+                    </div>
+    <div class="team-member">
+                            <div class="member-image">
+                                <img src="img2.webp" alt="Styliste 2">
+                            </div>
+                            <h3 class="member-name"> Annes koffi </h3>
+                            <p class="member-role">Styliste Senior</p>
+                            <p class="member-bio">Spécialiste des colorations innovantes, Anne combine techniques traditionnelles et tendances modernes pour des résultats époustouflants.</p>
+                        </div>
+    
+                        <div class="team-member">
+                            <div class="member-image">
+                                <img src="img1.webp" alt="Styliste 3">
+                            </div>
+                            <h3 class="member-name">Roxane merveille</h3>
+                            <p class="member-role">Styliste Junior</p>
+                            <p class="member-bio">Fraîchement diplômée mais déjà reconnue pour sa créativité, Roxane apporte un souffle nouveau avec ses concepts avant-gardistes.</p>
+                        </div>
+                    </div>
+</section>
+
+                <!-- Section Contact -->
+                <section id="contact" class="contact">
+                    <h2 class="section-title">Contactez-Nous</h2>
+                    <p class="section-subtitle">Prenez rendez-vous ou posez-nous vos questions</p>
+                    
+                    <div class="contact-container">
+                        
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Votre nom">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="Votre email">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" required placeholder="Votre téléphone">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Envoyer</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer">
+                        <div class="footer-section">
+                            <h4>Newsletter</h4>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Votre email">
+                                <button type="submit" class="btn">S'abonner</button>
+                            </form>
+                            <br>
+
+                            
+                                                        <div class="creator-section">
+                                                            <div class="creator-content">
+                                                                <div class="creator-image">
+                                                                    <img src="createur.jpg" alt="Créateur" class="small-image">
+                                                                </div>
+                                                                <div class="creator-info">
+                                                                    <div class="creator-contact">
+                                                                        <h4><strong>Contactez le Créateur</strong></h4>
+                                                                        <p><strong>Pour un contact direct avec le créateur :</strong></p>
+                                                                        <a href="tel:+225 0594547632" class="btn contact-btn" style="display: block; font-size: 1.2em; padding: 15px; margin: 10px 0; background-color: #4CAF50; color: white; text-align: center; border-radius: 5px;">
+                                                                            <i class="fas fa-phone"></i> <strong>Cliquez ici pour appeler</strong>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="creator-quote">
+                                                                        <blockquote>
+                                                                            <strong>"Jusqu'à ce que l'inconscient devienne conscient, le subconscient continuera à diriger votre vie et vous l'appellerez destin. La persévérance est la clé de toute réussite."</strong>
+                                                                            <br>
+                                                                        </blockquote>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>                            
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2024 Coiff'in by seo. Tous droits réservés.</p>
+                    </div>
+                </footer>
+                <!-- Scripts -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="js/main.js"></script>
+            </body>
+        </html>
+                        
